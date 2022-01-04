@@ -4,5 +4,7 @@ libusbflags=`pkg-config --libs --cflags libusb-1.0`
 debugflags=-Wall -Werror -pedantic
 output=adb
 
-all:
+debug:
 	$(cc) $(targets) $(debugflags) $(libusbflags) -o $(output)
+all:
+	$(cc) $(targets) $(libusbflags) -o $(output)

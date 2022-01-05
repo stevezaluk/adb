@@ -2,6 +2,9 @@
 #include <string>
 #include <libusb-1.0/libusb.h>
 
+#ifndef DEV_H
+#define DEV_H
+
 using namespace std;
 
 class Device {
@@ -27,3 +30,5 @@ class Device {
 
         void wipe_user_data();
 };
+
+#endif DEV_H

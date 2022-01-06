@@ -10,9 +10,11 @@ using namespace std;
 class Device {
     public:
         string state;
+        string manufacturer;
 
         libusb_device *device;
         libusb_device_descriptor desc;
+        libusb_device_handle *handle;
 
         Device(libusb_device *device);
         ~Device();

@@ -1,0 +1,7 @@
+# Untracked Files
+
+.vscode
+.DS_Store
+tests/*.cpp
+adb
+a.out

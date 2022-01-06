@@ -15,6 +15,7 @@ class USBProtocol {
         int deviceCount;
         libusb_context *context;
         libusb_device **deviceList;
+        
         Device *currentDevice;
     
     public:
@@ -33,4 +34,4 @@ class USBProtocol {
         void readData();
 };
 
-#endif USB_H
+#endif

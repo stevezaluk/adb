@@ -31,4 +31,4 @@ class Device {
         void wipeUserData();
 };
 
-#endif DEV_H
+#endif

@@ -1,5 +1,7 @@
 ADB and fastboot rewritten in C++
 
+See LICENSE for LibUSB license and authors
+
 Dependencies:
 - libusb1.0
 - g++

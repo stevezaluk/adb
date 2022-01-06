@@ -6,5 +6,6 @@ output=adb
 
 debug:
 	$(cc) $(targets) $(debugflags) $(libusbflags) -o $(output)
+
 all:
 	$(cc) $(targets) $(libusbflags) -o $(output)

@@ -14,7 +14,7 @@ class Device {
         libusb_device *device;
         libusb_device_descriptor desc;
 
-        Device();
+        Device(libusb_device *device);
         ~Device();
         
         void upload(string filename);
@@ -28,7 +28,7 @@ class Device {
         void reboot(string mode);
         void info();
 
-        void wipe_user_data();
+        void wipeUserData();
 };
 
 #endif DEV_H

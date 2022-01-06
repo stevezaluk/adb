@@ -3,10 +3,10 @@ ADB and fastboot rewritten in C++
 See LICENSE for LibUSB license and authors
 
 Dependencies:
-- libusb1.0
 - g++
 - pkg-config
 - make
+- libusb1.0 (https://github.com/libusb/libusb.git) [See LICENSE for credits]
 
 How to build:
 `$ make all`

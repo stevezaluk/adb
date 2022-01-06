@@ -1,5 +1,5 @@
 cc=g++
-targets=main.cpp
+targets=main.cpp src/*.cpp
 libusbflags=`pkg-config --libs --cflags libusb-1.0`
 debugflags=-Wall -Werror -pedantic
 output=adb

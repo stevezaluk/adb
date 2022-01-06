@@ -12,14 +12,13 @@ using namespace std;
 
 class USBProtocol {
     private:
-        int deviceCount;
+        ssize_t deviceCount;
         libusb_context *context;
         libusb_device **deviceList;
         
         Device *currentDevice;
     
     public:
-
         USBProtocol();
         USBProtocol(libusb_context *context);
         ~USBProtocol();

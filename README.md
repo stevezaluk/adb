@@ -1,8 +1,12 @@
 ADB and fastboot rewritten in C++
 
-You will need libusb installed.
+Dependencies:
+- libusb1.0
+- g++
+- pkg-config
+- make
 
 How to build:
-
 `$ make all`
-`$ ./adb devices`
+
+Written and tested on macOS Monteray

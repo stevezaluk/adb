@@ -12,3 +12,4 @@ How to build:
 `$ make all`
 
 Written and tested on macOS Monteray
+Tested on Pixel 3

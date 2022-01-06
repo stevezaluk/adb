@@ -5,3 +5,4 @@
 tests/*.cpp
 adb
 a.out
+*.gch

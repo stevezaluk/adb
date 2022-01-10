@@ -11,13 +11,21 @@ class Device {
     public:
         string state;
         string manufacturer;
-
         libusb_device *device;
         libusb_device_descriptor desc;
         libusb_device_handle *handle;
 
+        Device();
         Device(libusb_device *device);
         ~Device();
+
+        libusb_device *getDevice();
+        libusb_device_descriptor getDeviceDesc();
+        libusb_device_handle *getDeviceHandle();
+
+        void setDevice(libusb_device *device);
+        void setDeviceDesc(libusb_device_descriptor desc);
+        void setDeviceHandle(libusb_device_handle *handle);
         
         void upload(string filename);
         void download(string filename);
@@ -31,6 +39,10 @@ class Device {
         void info();
 
         void wipeUserData();
+        
+        void openHandle();
+        void writeData(void *data);
+        void readData();
 };
 
 #endif

@@ -11,5 +11,9 @@ Dependencies:
 How to build:
 `$ make all`
 
+Build with more agressive error checking:
+`$ make debug`
+
 Written and tested on macOS Monteray
+
 Tested on Pixel 3

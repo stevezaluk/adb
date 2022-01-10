@@ -10,6 +10,9 @@
 using namespace std;
 
 USBProtocol::USBProtocol() {
+    const libusb_version *version = libusb_get_version();
+    cout << "[libusb] Version: " << version->major << "." << version->minor << "." << version->micro << version->rc << endl;
+    
     int init = libusb_init(&this->context);
     if(init == 0) {
         cout << "[libusb] Initialized" << endl << endl;
@@ -23,6 +26,9 @@ USBProtocol::USBProtocol() {
 }
 
 USBProtocol::USBProtocol(libusb_context *context) {
+    const libusb_version *version = libusb_get_version();
+    cout << "[libusb] Version: " << version->major << "." << version->minor << "." << version->micro << version->rc << endl;
+
     int init = libusb_init(&context);
     if(init == 0) {
         cout << "[libusb] Initialized" << endl;

@@ -5,7 +5,7 @@ debugflags=-Wall -Werror -pedantic
 output=adb
 
 debug:
-	$(cc) $(targets) $(debugflags) $(libusbflags) -o $(output)
+	$(cc) $(targets) $(debugflags) $(libusbflags) -o a.out
 
 all:
 	$(cc) $(targets) $(libusbflags) -o $(output)

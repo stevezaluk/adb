@@ -11,15 +11,17 @@ using namespace std;
 #define USB_H
 
 class USBProtocol {
-    private:
+    protected:
         ssize_t deviceCount;
         libusb_context *context;
-        libusb_device **deviceList;
-        
-        Device *currentDevice;
+        libusb_device **rawDeviceList; // all connected usb devices (android or not)
     
     public:
-        USBProtocol();
+        bool verbose;
+        Device *currentDevice;
+        vector<Device *> connectedDevices;
+    
+        USBProtocol(); 
         USBProtocol(libusb_context *context);
         ~USBProtocol();
 
@@ -28,9 +30,6 @@ class USBProtocol {
         void setCurrentDevice(libusb_device *device);
         void setCurrentDevice(uint8_t serialNumber);
         void setCurrentDevice(string serialNumber);
-
-        void writeData(void *data);
-        void readData();
 };
 
 #endif

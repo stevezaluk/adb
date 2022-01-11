@@ -1,35 +1,35 @@
-0502#Acer
-0b05#ASUS
-413c#Dell
-0489#Foxconn
-04c5#Fujistsu/Fujitsu Toshiba
-091e#Garmin-Asus
-18d1#Google
-201E#Haier
-109b#Hisense
-0bb4#HTC
-12d1#Huawei
-24e3#K-Touch
-2116#KT Tech
-0482#Kyocera
-17ef#Lenovo
-1004#LG
-22b8#Motorola
-0e8d#MTK
-0409#NEC
-2080#Nook
-0955#Nvidia
-2257#OTGV
-10a9#Pantech
-1d4d#Pegatron
-0471#Philips
-04da#PMC-Sierra
-05c6#Qualcomm
-1f53#SK Telesys
-04e8#Samsung
-04dd#Sharp
-054c#Sony
-0fce#Sony Ericsson
-2340#Teleepoch
-0930#Toshiba
-19d2#ZT
+0502:Acer
+0b05:ASUS
+413c:Dell
+0489:Foxconn
+04c5:Fujistsu/Fujitsu Toshiba
+091e:Garmin-Asus
+18d1:Google
+201E:Haier
+109b:Hisense
+0bb4:HTC
+12d1:Huawei
+24e3:K-Touch
+2116:KT Tech
+0482:Kyocera
+17ef:Lenovo
+1004:LG
+22b8:Motorola
+0e8d:MTK
+0409:NEC
+2080:Nook
+0955:Nvidia
+2257:OTGV
+10a9:Pantech
+1d4d:Pegatron
+0471:Philips
+04da:PMC-Sierra
+05c6:Qualcomm
+1f53:SK Telesys
+04e8:Samsung
+04dd:Sharp
+054c:Sony
+0fce:Sony Ericsson
+2340:Teleepoch
+0930:Toshiba
+19d2:ZT

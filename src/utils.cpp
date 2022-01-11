@@ -27,7 +27,7 @@ bool checkForVendor(string vendorId) {
 
         getline(file, line);
 
-        vendor = line.substr(0, line.find('#'));
+        vendor = line.substr(0, line.find(':'));
         if(vendor == vendorId) {
             file.close();
             return true;

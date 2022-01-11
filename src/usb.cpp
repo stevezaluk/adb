@@ -69,7 +69,7 @@ void USBProtocol::findDevices() {
             d->setDevice(device);
             d->setDeviceDesc(desc);
 
-            printf("[libusb] %sFound%s: Connected Device (0x%04x) [%04x]\n", GREEN, RESET, d->desc.idVendor, d->desc.iSerialNumber);
+            printf("[libusb] %sFound%s: Connected Device (0x%04x) [%04x]\n", GREEN, RESET, d->getDeviceDesc().idVendor, d->getDeviceDesc().iSerialNumber);
             this->connectedDevices.push_back(d);
             break;
         }

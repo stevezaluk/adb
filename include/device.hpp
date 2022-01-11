@@ -8,12 +8,14 @@
 using namespace std;
 
 class Device {
-    public:
-        string state;
-        string manufacturer;
+    protected:
         libusb_device *device;
         libusb_device_descriptor desc;
         libusb_device_handle *handle;
+
+    public:
+        string state;
+        string manufacturer;
 
         Device();
         Device(libusb_device *device);

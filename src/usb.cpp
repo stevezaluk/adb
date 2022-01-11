@@ -53,7 +53,6 @@ void USBProtocol::findDevices() {
     for(size_t i = 0; i < this->deviceCount; i++) {
         libusb_device *device = this->rawDeviceList[i];
         libusb_device_descriptor desc = {0};
-        libusb_device_handle *handle = nullptr;
 
         int ret = libusb_get_device_descriptor(device, &desc);
         if(ret != 0) {

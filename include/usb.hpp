@@ -27,7 +27,6 @@ class USBProtocol {
 
         void findDevices();
 
-        void setCurrentDevice(libusb_device *device);
         void setCurrentDevice(uint8_t serialNumber);
         void setCurrentDevice(string serialNumber);
 };
